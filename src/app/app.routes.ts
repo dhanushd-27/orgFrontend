@@ -1,13 +1,13 @@
 import { Routes } from '@angular/router';
-import { OrgComponent } from './pages/org/org.component';
 
 export const routes: Routes = [
   {
-    path: "org",
-    component: OrgComponent
+    path: '',
+    pathMatch: 'full',
+    loadComponent: () => import('./pages/org/org.component').then(m => m.OrgComponent)
   },
-  {
-    path: "",
-    component: OrgComponent
-  }
+  // {
+  //   path: 'orgs',
+  //   loadComponent: () => import('./pages/org/org.component').then(m => m.OrgComponent)
+  // }
 ];
