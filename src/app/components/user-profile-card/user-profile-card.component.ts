@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 @Component({
   selector: 'app-user-profile-card',
@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './user-profile-card.component.css'
 })
 export class UserProfileCardComponent {
-
+  name = input();
+  email = input();
 }
