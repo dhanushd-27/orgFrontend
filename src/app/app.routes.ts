@@ -4,7 +4,7 @@ export const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    loadComponent: () => import('./pages/dashboard-page/dashboard-page.component').then(m => m.DashboardPageComponent)
+    loadComponent: () => import('./pages/home-page/home-page.component').then(m => m.HomePageComponent)
   },
   {
     path: 'signup',
